@@ -54,7 +54,7 @@ function buildMenuHTML (obj = {}) {
   let path = window.location.pathname.split('/')
   let currentPage = path[path.length - 1] === '' ? '/' : path[path.length - 1]
 
-  Object.entries(obj).forEach(([key, item]) => {
+  Object.entries(obj).forEach(([key,item]) => {
     if (key == 'Others') {
       html += '<li class="dropdown">'
       html += '<a class="nav-link nested-dropdown" href="#" id="Others"> Others </a>'
